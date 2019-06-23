@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-
+import Form from './components/Form'
 import './App.css';
 
 function App() {
@@ -22,6 +22,7 @@ clearInput =()=> {
   
   return (
     <div >
+<<<<<<< HEAD
       <form>
         <table>
            <caption>Simple Interest Calculator</caption>
@@ -44,6 +45,10 @@ clearInput =()=> {
         </table>
 
       </form>
+=======
+      <Form/>
+      
+>>>>>>> f3484fd155b03ef8f4863ad954bfea3afb9ddb23
     </div>
   );
 }
