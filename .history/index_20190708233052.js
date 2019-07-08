@@ -5,8 +5,7 @@ const path = require('path')
 const app = express();
 
            //====SERVING REACT SIDE OF THE APPLICATION
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')))
+
 
 
 //DB Connection

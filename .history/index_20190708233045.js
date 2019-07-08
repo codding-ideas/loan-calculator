@@ -5,8 +5,7 @@ const path = require('path')
 const app = express();
 
            //====SERVING REACT SIDE OF THE APPLICATION
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')))
+
 
 
 //DB Connection
@@ -26,7 +25,8 @@ app.get('/', (req, res) => {
 //SERVING ROUTES
 app.use('/api/loan', loanRouter)
 
-
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')))
        
 
 // Right before your app.listen(), add this:
