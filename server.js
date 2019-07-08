@@ -15,7 +15,9 @@ mongoose.connect('mongodb://localhost/loanCalculator', {
 //MIDDLEWARE
 app.use(express.json())
 
-
+app.get('/', (req, res) => {
+    res.json({app:"iBudget"})
+})
 //SERVING ROUTES
 app.use('/api/loan', loanRouter)
 
