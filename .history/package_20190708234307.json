@@ -1,0 +1,36 @@
+{
+  "name": "loan-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "v10.15.1",
+    "npm": "6.9.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tweneboah/loan-calculator.git"
+  },
+  "author": "Emmanuel & Gift",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tweneboah/loan-calculator/issues"
+  },
+  "homepage": "https://github.com/tweneboah/loan-calculator#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.3"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1"
+  }
+}
