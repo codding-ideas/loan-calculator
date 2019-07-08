@@ -4,7 +4,9 @@ const mongoose = require('mongoose');
 const path = require('path')
 const app = express();
 
-
+           //====SERVING REACT SIDE OF THE APPLICATION
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')))
 
 
 //DB Connection
@@ -14,7 +16,7 @@ mongoose.connect('mongodb://localhost/loanCalculator', {
     })
     .then(() => console.log("DB Connected successfully"));
 
- app.use(express.static(path.join(__dirname, 'client/build')));
+    app.use(express.static(path.join(__dirname, 'client/build')));
 
 //MIDDLEWARE
 app.use(express.json())
