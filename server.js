@@ -6,11 +6,11 @@ const app = express();
 
            //====SERVING REACT SIDE OF THE APPLICATION
 
-           app.use(express.static(path.join(__dirname, "client", "build")))
-           // Right before your app.listen(), add this:
-           app.get("*", (req, res) => {
-               res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-           });
+        //    app.use(express.static(path.join(__dirname, "client", "build")))
+        //    // Right before your app.listen(), add this:
+        //    app.get("*", (req, res) => {
+        //        res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+        //    });
 
 //DB Connection
 mongoose.connect('mongodb://localhost/loanCalculator', {
