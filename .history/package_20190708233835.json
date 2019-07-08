@@ -9,10 +9,10 @@
   },
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\" "
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && yarn install && yarn run build"
   },
   "repository": {
     "type": "git",
