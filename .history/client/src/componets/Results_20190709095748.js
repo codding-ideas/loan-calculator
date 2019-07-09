@@ -9,10 +9,8 @@ const Results = (props) => {
             <hr/>
             <h3>Amount: $ {props.loan.amount}</h3>
             <hr/>
-            <h3>Interest Rate: $ {props.loan.interestRate}</h3>
-            <hr/>
-            <h3>Amount To pay: $ {props.loan. amountToPay}</h3>
-            <hr/>
+            <h3>Interest Rate: ${props.loan.interestRate}</h3>
+            <h3>Amount To pay: ${props.loan. amountToPay}</h3>
         </div>
     )
 }

@@ -17,7 +17,7 @@ dbConnection()
 //     })
 //     .then(() => console.log("DB Connected successfully"));
 
-  app.use(express.static(path.join(__dirname, 'client/build')));
+//  app.use(express.static(path.join(__dirname, 'client/build')));
 
 //MIDDLEWARE
 app.use(express.json())
