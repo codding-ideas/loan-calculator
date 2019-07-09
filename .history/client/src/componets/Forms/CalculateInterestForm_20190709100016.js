@@ -29,6 +29,7 @@ const CalculateInterestForm = (props) => {
     <div className="App">
         <section className="container">
       <h3 className="large text-primary">Calculate your interest Rate</h3>
+      <p className="lead"><i className="fas fa-money"></i> Create Your Account</p>
       <form className="form" onSubmit = {onFormSubmit}>
         <div className="form-group">
           <input type="text" placeholder="Amount" name="amount"   onChange = {onChange}/>
@@ -37,8 +38,8 @@ const CalculateInterestForm = (props) => {
           <input type="text" placeholder="Rate" name="rate" onChange = {e => onChange(e)} />
          
         </div>
-        <small>
-         Don't inclide the % sign we will take care of it 😀
+        <small className="my-1">
+        Already have an account? <a href="login.html">Sign In</a>
       </small>
         <div className="form-group">
           <input
@@ -51,6 +52,9 @@ const CalculateInterestForm = (props) => {
 
         <input type="submit" className="btn btn-primary" value="Calculate" />
       </form>
+      <small className="my-1">
+        Already have an account? <a href="login.html">Sign In</a>
+      </small>
     </section>
     </div>
   );

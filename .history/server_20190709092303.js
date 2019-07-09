@@ -11,13 +11,13 @@ const dbConnection = require('./config/db')
 //DB Connection
 
 dbConnection()
-// mongoose.connect('mongodb://localhost/loanCalculator', {
-//         useNewUrlParser: true,
-//         useCreateIndex: true
-//     })
-//     .then(() => console.log("DB Connected successfully"));
+mongoose.connect('mongodb://localhost/loanCalculator', {
+        useNewUrlParser: true,
+        useCreateIndex: true
+    })
+    .then(() => console.log("DB Connected successfully"));
 
-//  app.use(express.static(path.join(__dirname, 'client/build')));
+ app.use(express.static(path.join(__dirname, 'client/build')));
 
 //MIDDLEWARE
 app.use(express.json())

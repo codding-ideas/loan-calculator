@@ -8,9 +8,10 @@ function App() {
 
   return (
     <div className='container'>
-       < Results />
+      
       <CalculateInterestForm/>
 
+     
     </div>
   )
 }
